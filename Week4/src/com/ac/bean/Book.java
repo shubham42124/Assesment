@@ -10,64 +10,32 @@ public class Book {
 	
 	
 	
-	
+	// Getting and Setting values for book
 	public int getBookId() {
 		return bookId;
 	}
 
-
-
-
-
 	public void setBookId(int bookId) {
 		this.bookId = bookId;
 	}
-
-
-
-
-
 	public String getBookTitle() {
 		return bookTitle;
 	}
-
-
-
-
-
 	public void setBookTitle(String bookTitle) {
 		this.bookTitle = bookTitle;
 	}
-
-
-
-
-
 	public float getBookPrice() {
 		return bookPrice;
 	}
-
-
-
-
-
 	public void setBookPrice(int bookPrice) {
 		this.bookPrice = bookPrice;
 	}
 
-
-
-
-
-	public String getGrade() {
+        public String getGrade() {
 		return grade;
 	}
 
-
-
-
-
-	public void setGrade(String grade) {
+       public void setGrade(String grade) {
 		this.grade = grade;
 	}
 
@@ -75,9 +43,6 @@ public class Book {
 
 
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
+	
 
 }
