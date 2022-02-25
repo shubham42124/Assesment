@@ -12,7 +12,7 @@ public class BookDB
 			String DriverName = "org.postgresql.Driver";
 			Class.forName(DriverName);
 			
-			Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost/BookInfo","root","root"+"root");
+			Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost/BookInfo","root","root"+"");
 			
 			return conn;
 		
