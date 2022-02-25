@@ -35,7 +35,10 @@ public class BookDAO {
 		}
 			
 	}
+	
+	
 
+	// Search book by ID
 	public ArrayList getBookDetailsById(int bookId) throws Exception{
 			Connection con =null;
 			PreparedStatement pstmt = null;
