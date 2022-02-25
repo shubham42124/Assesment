@@ -11,6 +11,7 @@ public class BookUI {
 		String bookTitle = "";
 		float bookPrice = 0;
 		Scanner s = new Scanner(System.in);
+		// end user giving book details
 		System.out.println("Enter Book Id ");
 		bookId =s.nextInt();
 		System.out.println("Enter book Title");
