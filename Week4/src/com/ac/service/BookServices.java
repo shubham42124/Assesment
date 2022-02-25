@@ -7,11 +7,11 @@ public class BookServices {
 
 	public int addBookSerice(int bookId,String bookTitle, float bookPrice) {
 		String bookGrade = "";
-		if(bookPrice <= 500)
+		if(bookPrice <= 400)
 		{
 			bookGrade = "C";
 		}
-		else if(bookPrice <= 700)
+		else if(bookPrice <= 900)
 		{
 			bookGrade = "B";
 		}
