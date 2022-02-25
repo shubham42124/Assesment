@@ -7,7 +7,7 @@ import java.sql.SQLException
 public class BookDB 
 {
 
-	public static Connection getConnection() throws Exception
+	public static Connection getConnection() throws SQLException, ClassNotFoundException
 		{
 		         //Loading Driver Class
 			String DriverName = "org.postgresql.Driver";
