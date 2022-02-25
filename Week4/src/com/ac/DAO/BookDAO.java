@@ -14,10 +14,11 @@ public class BookDAO {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		try {
+		      // Calling BookDb method
 			con = BookDB.getConnection();
-			
+			// Sql query for insert values
 			String ins_str = "insert into bookTable values(?,?,?,?)";
-			
+			//execute statement
 			pstmt = con.prepareStatement(ins_str);
 			pstmt.setInt(1, book.getBookId());
 			pstmt.setString(2, book.getBookTitle());
@@ -25,7 +26,7 @@ public class BookDAO {
 			pstmt.setString(4, book.getGrade());
 			
 			int updateCount = pstmt.executeUpdate();
-			
+			//close Connection
 			con.close();
 			return updateCount;
 		}catch(Exception e)
@@ -45,7 +46,7 @@ public class BookDAO {
 			ResultSet rs = null;
 			
 			con = BookDB.getConnection();
-			
+		      // Sql query to show table
 			String sel_str = "Select bookTitle,bookPrice from Book where bookId = ?";
 			
 			pstmt = con.prepareStatement(sel_str);
