@@ -14,7 +14,7 @@ public class BookDB
 			Class.forName(DriverName);
 			
 		       //Execute Connection
-			Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost/shubham","postgres","shubham"+"");
+			Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost/BookInfo","postgres","shubham1"+"");
 			
 			return conn;
 		
