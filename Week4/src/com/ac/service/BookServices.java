@@ -1,7 +1,7 @@
 package com.ac.service;
 
-import com.ac.DAO.*;
-import com.ac.bean.*;
+import com.ac.DAO.BookDao;
+import com.ac.bean.Book;
 
 public class BookServices {
 
@@ -32,6 +32,7 @@ public class BookServices {
 		int updateResult = 0;
 		try
 		{
+			// calling method of BookDao class
 			updateResult = bDAO.addBook(book);
 			return updateResult;
 		}
